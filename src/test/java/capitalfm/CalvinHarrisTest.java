@@ -38,10 +38,8 @@ public class CalvinHarrisTest {
         String artistNowPlaying = "";
         Driver.navigate().to("https://www.capitalfm.com/");
         Driver.navigate().refresh();
-        artistNowPlaying = Driver.findElement(By.cssSelector(".now_playing_card div a")).getText();
+        artistNowPlaying = Driver.findElement(By.cssSelector(".now_playing_card div:nth-child(3)")).getText();
         assertThat("Calvin Harris is now playing", artistNowPlaying, is(equalTo("Calvin Harris")));
-
-
     }
 
     @Test

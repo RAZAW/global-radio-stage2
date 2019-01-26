@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: capitalfm.CalvinHarrisTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.644 s <<< FAILURE! - in capitalfm.CalvinHarrisTest
+calvinHarrisIsPlaying(capitalfm.CalvinHarrisTest)  Time elapsed: 12.761 s  <<< FAILURE!
+java.lang.AssertionError: 
+Calvin Harris is now playing
+Expected: is "Calvin Harris"
+     but: was "Storm Queen"
+	at capitalfm.CalvinHarrisTest.calvinHarrisIsPlaying(CalvinHarrisTest.java:42)
+
