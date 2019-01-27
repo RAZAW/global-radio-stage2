@@ -48,7 +48,7 @@ public class CalvinHarrisTest {
         Driver.navigate().refresh();
         List<WebElement> artistsRecentlyPlayed;
         artistsRecentlyPlayed = Driver.findElements(By.className("artist"));
-        for (int i = 1; i < 4; i++) {
+        for (int i = 1; i<artistsRecentlyPlayed.size(); i++) {
             if (artistsRecentlyPlayed.get(i).getText().equalsIgnoreCase("Calvin Harris")) {
                 System.out.println("Calvin Harris has recently played");
                 break;
